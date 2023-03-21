@@ -114,7 +114,7 @@
 .title{
     width: 95%;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-size: 14px;
     word-spacing: 4px;
     letter-spacing: 1.2px;
@@ -131,17 +131,19 @@
 }
 .product img{
     width: 100%;
+    /* height: 100%; */
 }
 .ex-brands{
     width: 100%;
-    /* height: 500px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  margin-bottom: 30px;
+
 }
 .ex-brands .product{
     width: 12.3%;
-    /* height: 200px; */
+    height: 190px;
    
 }
 .top-picks{
@@ -157,18 +159,127 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 
 }
 .categories .product{
     width: 12.5%;
+    height: 179px;
+}
+.top-brands{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.top-brands .product{
+    width: 12.5%;
+    height: 240px;
 }
 
+.slashed-price{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    align-items: stretch;
+}
+.slashed-price .product{
+    width: 14.2%;
+    height: 195px;
+}
 
+.best-buy{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.best-buy .product{
+    width: 12%;
+    height: 175px;
+}
 
+.luxe{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.luxe .product{
+    width: 12.5%;
+    height: 194px;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    
+}
+.cards .product{
+    width: 25%;
+    height: 267px;
+}
+.gift-product{
+    width: 100%;
+    display: flex;
+}
+.gift-product .product{
+    width: 12.5%;
+}
+.footer{
+    width: 100%;
+    background-color: #fafbfc;
 
+}
+.footer-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid seagreen;
 
+}
 
+.links{
+    width: 25%;
+    border: 1px solid saddlebrown;
+}
+.footer-title{
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 15px;
+    color: #282c3f;
+}
+.footer-content{
+    font-size: 14px;
+    margin: 15px;
 
+}
+.policy{
+    width: 25%;
+    border: 1px solid salmon;
+
+}
+li{
+    list-style: none;
+}
+.social-links{
+    width: 50%;
+    border: 1px solid sandybrown;
+
+}
+
+.right{
+    width: 50%;
+    border: 1px solid slateblue;
+
+}
 
 
 
