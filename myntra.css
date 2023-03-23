@@ -555,7 +555,7 @@ li{
 }
 .filter-list-wrapper{
     width: 18%;
-    border: 1px solid salmon;
+    border-right: 1px solid rgba(14, 14, 14, 0.2);
 }
 
 .filter-list-items{
@@ -596,15 +596,11 @@ li{
     font-size: 14px;
     margin-right: 3px;
 }
-.filter-list-option p:nth-child(3){
+.count{
     color: gray;
     font-size: 10px;
 }
 
-.product-list-wrapper{
-    width: 82%;
-    border:  1px solid slateblue;
-}
 .filter-list-wrapper .filter-list-item:nth-child(2) .filter-title{
     display: flex;
     justify-content: space-between;
@@ -623,7 +619,270 @@ li{
     width: 100%;
     margin: 0px 0px 15px 35px;
     color: red;
+    font-size: 14px;
 }
+.filter-list-wrapper .filter-list-item:nth-child(4) .filter-title{
+    display: flex;
+    justify-content: space-between;
+
+}
+.color{
+    width: 16px;
+    height: 16px;
+    border: none;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+.black{
+    background-color: black;
+}
+.blue{
+    background-color: blue;
+}
+.white{
+    background-color: white;
+    border: 1px solid gray;
+}
+.navyblue{
+    background-color: navy;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.gray{
+    background-color: gray;
+}
+.delivery-update{
+    width: 80%;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.delivery-update p{
+    padding: 5px 10px;
+    font-size: 12px;
+    text-align: center;
+}
+.filter-list-item:nth-child(6) .filter-list-content{
+    color: gray;
+}
+.suggestion{
+    font-size: 12px;
+    color: gray;
+    margin: 0px 20px 20px 20px;
+    line-height: 20px;
+}
+.product-list-wrapper{
+    width: 82%;
+    /* border:  1px solid slateblue; */
+}
+.product-container{
+    width: 95%;
+    margin: 20px auto;
+    /* border: 1px solid black; */
+    display: flex; justify-content: start;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+.product-item{
+    width: 21%;
+    /* border: 1px solid salmon; */
+    margin-bottom: 25px;
+}
+.product-item .product{
+    width: 100%;
+    height: 290px;
+    /* border: 1px solid slateblue; */
+}
+
+.product-item .product img{
+    width: 100%;
+}
+.p-brand{
+    font-size: 16px;
+    font-weight: bold;
+    color: #282c3f;
+    margin-top: 10px;
+}
+.p-name{
+    font-size: 14px;
+    margin-top: 5px;
+    color: gray;
+}
+.price-section{
+    display: flex;
+    justify-content: start;
+    gap: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.p-price{
+    font-size: 13px;
+    font-weight: bold;
+    color: #282c3f;
+}
+.p-slashed-price{
+    font-size: 12px;
+    color: gray;
+    
+}
+.p-discount{
+    font-size: 12px;
+    color: rgb(220, 127, 127);
+    text-transform: uppercase;
+}
+.rating{
+    width: 35%;
+    /* border: 1px solid black; */
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(250, 246, 246, 0.713);
+    padding: 2px 4px;
+    gap: 2px;
+    z-index: 1;
+    position: relative;
+    margin-top: -38px;
+    margin-left: 10px;
+}
+.r-no{
+    width: 20%;
+}
+.r-no p{
+    font-size: 11px;
+    color: #282c3f;
+    font-weight: bold;
+}
+.r-icon{
+    width: 20%;
+}
+.r-icon i{
+    color: rgb(42, 219, 110);
+    font-size: 10px;
+    padding-bottom: 8px;
+}
+.pipe{
+    width: 10%;
+}
+.pipe p{
+    font-size: 11px;
+    font-weight: bold;
+    color: #282c3f;
+}
+.r-count{
+    width: 50%;
+}
+.r-count p{
+    font-size: 11px;
+    font-weight: bold;
+    color: #282c3f;
+}
+.few-left{
+    font-size: 12px;
+    color: orangered;
+    font-weight: bold;
+}
+/* pegination */
+
+.pegination-container{
+    width: 98%;
+    /* border-left: 1px solid #696e79; */
+    border-top: 1px solid rgba(14, 14, 14, 0.2);
+    margin-top: 100px;
+    
+}
+.pegination{
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid olive; */
+    padding: 40px;
+    
+
+}
+.pegination-main >ul{
+    display: flex;
+    list-style: none;
+    /* border: 1px solid red; */
+    
+}
+.pegination-start{
+    color: #696e79;
+}
+.pegination-main{
+    color: #282c3f;
+    font-weight: 700;
+}
+.pegination-main >ul>li{
+    margin-left: 10px;
+    padding: 8px 10px;
+}
+.active-li{
+    color: white;
+    background-color: #282c3f;
+    
+    border-radius: 2px;
+}
+.pegination-end{
+    color: #282c3f;
+    font-weight: 700;
+    padding: 8px 10px;
+    border: 1px solid #282c3f;
+    border-radius: 5px;
+}
+
+.pegination-end>span>i{
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
