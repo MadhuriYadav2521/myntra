@@ -396,7 +396,7 @@
     /* border: 1px solid salmon; */
 
 }
-li{
+.footer-content li{
     list-style: none;
     margin-bottom: 5px;
     color: gray;
@@ -933,7 +933,8 @@ del{
 hr{
     width: 100%;
     color: #bfc0c642;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .taxes{
     font-size: 14px;
@@ -947,18 +948,21 @@ hr{
     gap: 5%;
     margin-bottom: 15px;
 }
-.size-header p:nth-child(1){
+
+.desc-title{
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
+    margin-bottom: 15px;
+    color: #282c3f;
 }
-.size-header p:nth-child(2){
+.size-header >p{
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
     color: #ff3f6c;
 }
-.size-header p:nth-child(2) i{
+.size-header >p i{
     font-size: 12px;
     font-weight: bold;
     color: #ff3f6c;
@@ -1016,13 +1020,9 @@ hr{
 }
 .delivery-section{
     width: 100%;
+    margin-bottom: 25px;
 }
-.delivery-section >p{
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
+
 .delivery-section i{
     margin-left: 5px;
 }
@@ -1050,17 +1050,68 @@ hr{
     font-weight: bold;
     color: #ff3f6c;
 }
-
-
-
-
-
-
-
-
-
-
-
+.delivery-section p:nth-child(3){
+    font-size: 12px;
+    font-weight: normal;
+    color: rgb(88, 87, 87);
+    text-transform:none;
+    margin-bottom: 15px;
+}
+.s-services{
+    font-size: 14px;
+    line-height: 18px;
+}
+.best-offers i{
+    margin-left: 5px;
+}
+.delivery-section p{
+    font-size: 16px;
+    line-height: 35px;
+    color: #282c3f;
+}
+.desc-subtitle{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #282c3f;
+}
+.best-price{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.desc-subtitle span{ 
+    color: rgb(241, 131, 91);
+}
+.best-offers ul{
+    margin-bottom: 5px;
+}
+.best-offers ul li{
+    font-size: 16px;
+    line-height: 30px;
+    color: #282c3f;
+    margin-left: 20px;
+}
+.best-price ul li:nth-child(2) span{
+    font-weight: bold;
+}
+.info-links{
+    font-size: 14px;
+    color:#ff3f6c;
+    font-weight: bold;
+    
+}
+.discOnCard{
+    margin-bottom: 15px;
+}
+.discOnCard ul li{
+    font-size: 14px;
+}
+.emi{
+    margin-bottom: 15px;
+}
+.emi ul li{
+    font-size: 14px;
+}
 
 
 
