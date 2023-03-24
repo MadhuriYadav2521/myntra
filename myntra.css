@@ -1129,6 +1129,7 @@ hr{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 .specifications{
     width: 45%;
@@ -1144,9 +1145,27 @@ hr{
 .specification-name{
     width: 100%;
 }
-
-
-
+.rating-section{
+    width: 100%;
+}
+/* .rating-section h3 span i{
+    color: #1bac99;
+} */
+.rating-count-wrapper{
+    width: 75%;
+    border: 1px solid salmon;
+    display: flex;
+}
+.rating-count{
+    border: 1px solid slateblue;
+    width: 40%;
+    height: 100px;
+}
+.rating-progress-bar{
+    border: 1px solid seagreen;
+    height: 100px;
+    width: 60%;
+}
 
 
 
