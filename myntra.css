@@ -1721,16 +1721,16 @@ hr {
 }
 
 .cart-container {
-    width: 70%;
+    width: 74%;
     /* border: 1px solid salmon; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0px auto;
 }
 
 .cart-left {
     /* border: 1px solid seagreen; */
-    width: 70%;
+    width: 67%;
     /* height: 300px; */
     /* margin-top: 30px; */
     margin-right: 10px;
@@ -1740,7 +1740,7 @@ hr {
 .cart-right {
     border: 1px solid sandybrown;
     /* height: 300px; */
-    width: 30%;
+    width: 35%;
 }
 
 .check-service {
@@ -1861,6 +1861,10 @@ hr {
 .header-right p{
     padding: 0px 10px;
     margin: 0px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    color: #696e79;
 }
 .cart-product{
     width: 100%;
@@ -1953,16 +1957,102 @@ hr {
     align-items: center;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
+.coupons-section{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    /* border-radius: 5px; */
+    padding: 5px 15px;
+    /* border: 1px solid rgba(128, 128, 128, 0.563); */
+}
+.coupons-section > .cart-title{
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.coupons{
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.563);
+}
+.coupons-offer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.coupons-offer h3 span i{
+    margin-right: 10px;;
+}
+.coupons .link-info{
+    color: #ff3f6c;
+    margin-left: 0px;
+}
+.coupon-offer p span{
+    font-size: 12px;
+}
+.link-info-btn {
+    width: auto;
+    display: inline;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border: 1px solid #ff3f6c;
+    color: #ff3f6c;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.gift-section{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0px 15px;
+}
+.gift-section h3{
+    font-size: 11px;
+    font-weight: bolder;
+    margin: 15px;
+    
+}
+.gift-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    /* border-bottom: 1px solid gray; */
+    background-color: #fff1ec;
+    margin-bottom: 15px;
+    /* border: 1px solid salmon; */
+}
+.gift-card{
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.563);
+}
+.gift-card-img{
+    width: 12%;
+    height: 100px;
+    /* border: 1px solid black; */
+}
+.gift-card-img img{
+    width: 100%;
+    height: 100%;
+}
+.gift-card-content{
+    width: 80%;
+    padding: 5px;
+}
+.gift-card-content h4{ 
+    margin-bottom: 4px;
+}
+.gift-card-content p:nth-child(2){
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 8px;
+}
+.gift-card-content p:nth-child(3){
+    font-size: 11px;
+    color: #ff3f6c;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
 
 
 
