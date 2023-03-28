@@ -1736,9 +1736,26 @@ hr {
     margin-right: 10px;
 
 }
+.login-now{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-now-img{
+    width: 10%;
+    height: 20px;
+}
+.login-now-img{
+    width: 100%;
+    height: 100%;
+}
+.login-now-content{
+    width: 80%;
+}
 
 .cart-right {
-    border: 1px solid sandybrown;
+    /* border: 1px solid sandybrown; */
     /* height: 300px; */
     width: 35%;
 }
@@ -2010,7 +2027,7 @@ hr {
 .gift-section h3{
     font-size: 11px;
     font-weight: bolder;
-    margin: 15px;
+    margin-bottom: 15px;
     
 }
 .gift-wrapper{
@@ -2053,12 +2070,68 @@ hr {
     margin-bottom: 4px;
     font-weight: bold;
 }
+.bill-info{
+    width: 100%;
+    padding: 10px;
 
+}
+.bill-info-wrapper{
+    width:100%;
+}
+.bill-info-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bill-content-wrapper{
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.563);
+}
+.bill-info-wrapper .cart-content{
+    margin: 5px 10px;
+    padding: 0px;
+}
+.bill-content-wrapper .bill-content:nth-child(1) p:nth-child(2){
+    color: #04AA6D;
+}
+.bill-content-wrapper .bill-content:nth-child(2) p:nth-child(2){
+    color: #ff3f6c;
+}
+.bill-content-wrapper .bill-content:nth-child(3) p:nth-child(2) span{
+    color: #04AA6D;
+    text-transform: uppercase;
+}
+.bill-info-footer .cart-title{
+    margin: 15px 10px;
+}
+.bill-info .cart-title{
+    margin: 0px 10px;
+}
+.bill-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total-amt{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 
-
-
-
-
+}
+.bill-info-footer{
+    width: 100%;
+}
+.bill-info-footer .cart-btn{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 2px;
+}
 
 
 
