@@ -2060,6 +2060,10 @@ hr {
     font-weight: bold;
     border-radius: 4px;
     background-color: #fff;
+    cursor: pointer;
+}
+.link-info-btn:hover{
+    background-color: #fff1ec;
 }
 .gift-section{
     width: 100%;
