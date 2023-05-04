@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <link rel="icon" type="image/x-icon" href="img/myntra.png">
+    <link rel="stylesheet" href="/myntra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="screen">
+        <div class="register-container">
+            <div class="left-register-content">
+                <div class="login-title"> Login</div>
+
+                <form action="" onsubmit="login(event)">
+                    <div class="input_wrap">
+                        <input type="email" id="userEmail" required autocomplete="off" />
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input_wrap">
+                        <input type="password" id="userPassword" required  autocomplete="off"/>
+                        <label>Enter your password</label>
+                    </div>
+                    <input type="checkbox" name="" id="checkbox" >
+                    <label for="">Remember Me</label>
+
+                    <p class="form-t-and-c">By continuing, I agree to <span class="t-c-style">Terms of Use</span> & <span class="t-c-style">Privacy Policy</span></p>
+                    <div class="sign-up-btn">
+                    <input type="submit" value="Login">
+                        
+                    </div>
+                
+                </form>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

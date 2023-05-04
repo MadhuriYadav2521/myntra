@@ -48,7 +48,7 @@
             <div class="info">
                 <div class="info-item">
                     <i class="fa-regular fa-user"></i>
-                    <span>profile</span>
+                    <span id="switch">profile</span>
                 </div>
                 <div class="info-item">
                     <i class="fa-regular fa-heart"></i>
@@ -57,6 +57,9 @@
                 <div class="info-item">
                     <i class="fa-solid fa-bag-shopping"></i>
                     <span>bag</span>
+                </div>
+                <div class="info-item" id="logout">
+                    
                 </div>
             </div>
         </div>
@@ -648,6 +651,38 @@
         </div>
     </div>
 
+
+
+    
+    <script>
+        window.onload = function () {
+            // alert("working")
+            var currentUser = JSON.parse(localStorage.getItem("myntraCurrentUser"))
+            // console.log(currentUser,"currentUser");
+            if (!!currentUser) {
+                // alert(currentUser.namee)
+                var logoutDiv = document.getElementById("logout");
+                var divFromHtml = document.getElementById("switch");
+                // console.log(divFromHtml,"divFromHtml");
+                // var h1 = document.createElement("h1");
+                // h1.innerText = "madhuri"
+                // divFromHtml.append(h1)
+                var button = '<i class="fa-solid fa-arrow-right-from-bracket"></i> <button onclick="logout() ">Logout</button>'
+                var name = `<p> ${currentUser.namee}</p>`;
+                divFromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+            }
+            // else{
+            //     alert("current user absent")
+            // }
+        }
+        function logout() {
+            alert("We will miss you..")
+            localStorage.removeItem("myntraCurrentUser");
+            window.location.reload();
+        }
+
+    </script>
 </body>
 
 </html>
