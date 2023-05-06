@@ -114,9 +114,9 @@
 
             var productsFromLS = JSON.parse(localStorage.getItem("myntraProducts"))
             for (var i = 0; i < productsFromLS.length; i++) {
-                finalData += `<div id='singlePro' >
+                finalData += `<a  onclick='redirect(${JSON.stringify(productsFromLS[i])})'>
                             <img src=${productsFromLS[i].proImage} /><div class="g-pro-name">${productsFromLS[i].proName}</div>
-                            <div class="g-pro-price"> ${productsFromLS[i].proPrice}</div></div>`;
+                            <div class="g-pro-price">₹  ${productsFromLS[i].proPrice}</div></a>`;
             }
 
             // console.log(finalData, "finalData here")
@@ -124,6 +124,13 @@
             divToShowProducts.innerHTML = finalData;
 
 
+        }
+        function redirect(product) {
+            var singleProduct = JSON.stringify(product);
+            // console.log(s, " s here")
+            // alert("Working")
+            localStorage.setItem("myntra-current-product", singleProduct);
+            window.location.href = './product-details2.html'
         }
     </script>
     <script src="./main.js"></script>
