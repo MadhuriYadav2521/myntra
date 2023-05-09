@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <link rel="icon" type="image/x-icon" href="img/myntra.png">
+    <link rel="stylesheet" href="/myntra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="screen">
+        <div class="nav">
+            <div class="logo">
+                <img src="/img/myntra.png" alt="logo">
+            </div>
+            <div class="nav-link">
+                <div class="nav-item">
+                    <h1>Men</h1>
+                </div>
+                <div class="nav-item">
+                    <h1>Women</h1>
+                </div>
+                <div class="nav-item">
+                    <h1>Kids</h1>
+                </div>
+                <div class="nav-item">
+                    <h1>Home & Living</h1>
+                </div>
+                <div class="nav-item">
+                    <h1>Beauty</h1>
+                </div>
+                <div class="nav-item">
+                    <h1>Studio <sup>New</sup></h1>
+                </div>
+            </div>
+            <div class="searchbar">
+                <div class="search-item">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="search" placeholder="Search for products, brands and more">
+                </div>
+            </div>
+            <div class="info">
+                <div class="info-item" onclick="window.location.href='./sign-up.html'">
+                    <i class="fa-regular fa-user"></i>
+                    <span id="switch">profile</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>wishlist</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>bag</span>
+                </div>
+                <div class="info-item" id="logout">
+
+                </div>
+            </div>
+        </div>
+        <div class="product-header">
+            <div class="path">
+                <p>Home / Clothing / <span> Men T-Shirts</span></p>
+            </div>
+            <div class="items-count">
+                <p>Men T-Shirts- <span>85334 items</span></p>
+            </div>
+            <div class="filters-wrapper">
+                <div class="filter-name">
+                    <p>Filters</p>
+                </div>
+                <div class="filter-items">
+                    <div class="f-item">
+                        <p>Bundles <span><i class="fa-solid fa-chevron-down"></i></span></p>
+                    </div>
+                    <div class="f-item">
+                        <p>Country of Origin <span><i class="fa-solid fa-chevron-down"></i></span></p>
+                    </div>
+                    <div class="f-item">
+                        <p>Size <span><i class="fa-solid fa-chevron-down"></i></span></p>
+                    </div>
+                </div>
+                <div class="sort">
+                    <div class="sort-content">
+                        <p>Sort by: <span> Recommended</span></p><span><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-btn">
+            <p>flat ₹200 off
+                <span><i class="fa-solid fa-caret-left"></i></span>
+            </p>
+
+        </div>
+        <div class="bell">
+            <i class="fa-regular fa-bell"></i>
+        </div>
+        <!-- particular product -->
+        <div class="p-product">
+            <div class="filter-list-wrapper">
+                <div class="filter-list-item">
+                    <div class="filter-title">
+                        <p>categories</p>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <p>Tshirts</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <p>Loung Tshirts</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-list-item">
+                    <div class="filter-title">
+                        <p>brand</p>
+                        <div class="searchInFilter">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <p>Roadster</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <p>U.S. Polo Assn</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <p>Friskers</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <p>Tommy Hilifger</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <p>HRX by Hritik Roshen</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <p>Max</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <p>Jack Jones</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <p>Wrogen</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="more-items">
+                        <p>+602 more</p>
+                    </div>
+                </div>
+
+                <div class="filter-list-item">
+                    <div class="filter-title">
+                        <p>price</p>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <p>Rs. 164 to Rs. 3823</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <p>Rs. 3834 to Rs. 7593</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <p>Rs. 7593 to Rs. 11141</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <p>Rs. 11141 to Rs. 12800</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-list-item">
+                    <div class="filter-title">
+                        <p>color</p>
+                        <div class="searchInFilter">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <div class="color black"></div>
+                            <p>Black</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <div class="color blue"></div>
+                            <p>Blue</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <div class="color white"></div>
+                            <p>White</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <div class="color navyblue"></div>
+                            <p>Navy Blue</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <div class="color green"></div>
+                            <p>Green</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <div class="color red"></div>
+                            <p>Red</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="checkbox">
+                            <div class="color gray"></div>
+                            <p>Gray</p>
+                            <small class="count">(34541)</small>
+                        </div>
+                    </div>
+                    <div class="more-items">
+                        <p>+46 more</p>
+                    </div>
+                </div>
+
+                <div class="filter-list-item">
+                    <div class="filter-title">
+                        <p>discount range</p>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="radio">
+                            <p>10% and above</p>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="radio">
+                            <p>20% and above</p>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="radio">
+                            <p>30% and above</p>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="radio">
+                            <p>40% and above</p>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="radio">
+                            <p>50% and above</p>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="radio">
+                            <p>60% and above</p>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="radio">
+                            <p>70% and above</p>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="radio">
+                            <p>80% and above</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="filter-list-item">
+                    <div class="filter-title">
+                        <p>DELIVERY TIME</p>
+                    </div>
+                    <div class="delivery-update">
+                        <p>Update delivery pincode here</p>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="radio">
+                            <p>By Tommorow</p>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="radio">
+                            <p>Within 2 Days</p>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="radio">
+                            <p>Within 3 Days</p>
+                        </div>
+                    </div>
+                    <div class="filter-list-content">
+                        <div class="filter-list-option">
+                            <input type="radio">
+                            <p>Within 4 Days</p>
+                        </div>
+                    </div>
+                    <div class="suggestion">
+                        <em>Estimated fastest delivery time. Refer to actual delivery time in Bag.</em>
+                    </div>
+                </div>
+            </div>
+            <div class="product-list-wrapper">
+                <div class="product-container" id="productContainer">
+                    <div class="product-item">
+                        <div class="product" id="productImg">
+                            <img src=${productsFromLS[i].proImage} />
+
+                            <div class="rating">
+                                <div class="r-no">
+                                    <p>4</p>
+                                </div>
+                                <div class="r-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="pipe">
+                                    <p>|</p>
+                                </div>
+                                <div class="r-count">
+                                    <p>16.5k</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="p-brand" id="productName"></p>
+                        <p class="p-name">Typography Print T-Shirt</p>
+                        <div class="price-section">
+                            <p class="p-price" id="productPrice"></p>
+                            <p class="p-slashed-price"><del>Rs. 1099</del></p>
+                            <p class="p-discount">(73% off)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- pegination -->
+                <div class="pegination-container">
+                    <div class="pegination">
+                        <div class="pegination-start">
+                            <p>Page 1 of 1710</p>
+                        </div>
+                        <div class="pegination-main">
+                            <ul>
+                                <li class="active-li">1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                            </ul>
+                        </div>
+                        <div class="pegination-end">
+                            Next
+                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="left">
+                    <div class="links">
+                        <div class="footer-title">
+                            <p>online shopping</p>
+                        </div>
+                        <div class="footer-content">
+                            <ul>
+                                <li>Men</li>
+                                <li>Women</li>
+                                <li>Kids</li>
+                                <li>Home & Living</li>
+                                <li>Beauty</li>
+                                <li>Gift Cards</li>
+                                <li>Myntra Insider</li>
+                            </ul>
+                        </div>
+                        <div class="footer-title">
+                            <p>usel links</p>
+                        </div>
+                        <div class="footer-content">
+                            <ul>
+                                <li>Blog</li>
+                                <li>Careers</li>
+                                <li>Site Map</li>
+                                <li>Corporate Information</li>
+                                <li>Whitehat</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="policy">
+                        <div class="footer-title">
+                            <p>customer policies</p>
+                        </div>
+                        <div class="footer-content">
+                            <ul>
+                                <li>Contact Us</li>
+                                <li>FAQ</li>
+                                <li>T&C</li>
+                                <li>Terms of Use</li>
+                                <li>Track Orders</li>
+                                <li>Shipping</li>
+                                <li>Cancellation</li>
+                                <li>Returns</li>
+                                <li>Privacy Policy</li>
+                                <li>Grievance Officer</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <div class="footer-title">
+                            <p>Experience myntra app on mobile</p>
+                        </div>
+                        <div class="social-app">
+                            <img src="img/play-store-removebg-preview.png" alt="">
+                            <img src="img/apple-store-removebg-preview.png" alt="">
+                        </div>
+                        <div class="footer-title">
+                            <p>keep in touch</p>
+                        </div>
+                        <div class="social-icons">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="c-policy">
+                        <div class="c-policy-img">
+
+                            <img src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png"
+                                alt="">
+
+                        </div>
+                        <div class="c-policy-content">
+                            <p><span>100% ORIGINAL</span>guarantee for all products at myntra.com</p>
+                        </div>
+                    </div>
+                    <div class="c-policy">
+                        <div class="c-policy-img">
+                            <img src="https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png
+                            " alt="">
+                        </div>
+                        <div class="c-policy-content">
+                            <p><span>Return within 30days</span> of receiving your order</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+<script>
+    window.onload = function () {
+        // alert("CKJAN")
+
+        // alert("working")
+        var currentUser = JSON.parse(localStorage.getItem("myntraCurrentUser"))
+        // console.log(currentUser,"currentUser");
+        if (!!currentUser) {
+            // alert(currentUser.namee)
+            var logoutDiv = document.getElementById("logout");
+            var divFromHtml = document.getElementById("switch");
+            // console.log(divFromHtml,"divFromHtml");
+            // var h1 = document.createElement("h1");
+            // h1.innerText = "madhuri"
+            // divFromHtml.append(h1)
+            var button = '<i class="fa-solid fa-arrow-right-from-bracket"></i> <button onclick="logout()"  class="logout-style">Logout</button>'
+            var name = `<p> ${currentUser.namee}</p>`;
+            divFromHtml.innerHTML = name;
+            logoutDiv.innerHTML = button;
+        }
+        // else{
+        //     alert("current user absent")
+        // }
+
+
+        // var divToShowProducts = document.getElementById("products");
+        var divToShowProductImg = document.getElementById("productImg");
+        var divToShowProductName = document.getElementById("productName");
+        var divToShowProductPrice = document.getElementById("productPrice");
+        var divToShowAllProduct = document.getElementById("productContainer");
+
+        // var finalData = "";
+        var finalImg = "";
+        var finalName = "";
+        var finalPrice = "";
+        var finalContainer = "";
+
+        var productsFromLS = JSON.parse(localStorage.getItem("myntraProducts"))
+        for (var i = 0; i < productsFromLS.length; i++) {
+            // finalData += `<a  onclick='redirect(${JSON.stringify(productsFromLS[i])})'>
+            //             <img src=${productsFromLS[i].proImage} /><div class="g-pro-name">${productsFromLS[i].proName}</div>
+            //             <div class="g-pro-price">₹  ${productsFromLS[i].proPrice}</div></a>`;
+
+
+            finalContainer += `<div class="product-item" onclick='redirect(${JSON.stringify(productsFromLS[i])})'>
+                        <div class="product" >
+                            <img src=${productsFromLS[i].proImage} />
+                            <div class="rating">
+                                <div class="r-no">
+                                    <p>4</p>
+                                </div>
+                                <div class="r-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="pipe">
+                                    <p>|</p>
+                                </div>
+                                <div class="r-count">
+                                    <p>16.5k</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="p-brand">${productsFromLS[i].proName}</p>
+                        <p class="p-name">Typography Print T-Shirt</p>
+                        <div class="price-section">
+                            <p class="p-price" >₹  ${productsFromLS[i].proPrice}</p>
+                            <p class="p-slashed-price"><del>Rs. 1099</del></p>
+                            <p class="p-discount">(73% off)</p>
+                        </div>
+                    </div>`
+        }
+
+        // console.log(finalData, "finalData here")
+
+
+        // divToShowProducts.innerHTML = finalData;
+        divToShowProductImg.innerHTML = finalImg;
+        divToShowProductName.innerHTML = finalName;
+        divToShowProductPrice.innerHTML = finalPrice;
+        divToShowAllProduct.innerHTML = finalContainer;
+
+
+    }
+    function redirect(product) {
+        var singleProduct = JSON.stringify(product);
+        // console.log(s, " s here")
+        // alert("Working")
+        localStorage.setItem("myntra-current-product", singleProduct);
+        window.location.href = './product-details2.html'
+    }
+
+
+    function logout() {
+        alert("We will miss you..")
+        localStorage.removeItem("myntraCurrentUser");
+        window.location.reload();
+    }
+</script>
+<script src="./main.js"></script>
+
+</html>

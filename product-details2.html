@@ -58,6 +58,9 @@
                     <i class="fa-solid fa-bag-shopping"></i>
                     <span>bag</span>
                 </div>
+                <div class="info-item" id="logout">
+
+                </div>
             </div>
         </div>
         <div class="product-detail">
@@ -73,7 +76,7 @@
             <div class="product-section">
                 <div class="product-img">
                     <div class="product" id="singleProduct">
-                        
+
                     </div>
                     <div class="product">
                         <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8923841/2019/6/3/a21db48e-5fa4-4bd6-8a52-203745f247611559550212145-Minions-by-Kook-N-Keech-Men-Purple-Printed-Round-Neck-T-shir-2.jpg"
@@ -143,8 +146,7 @@
                         </div>
                     </div>
                     <div class="btn-section" id="forAddToCart">
-                        <!-- <button class="cart-btn"><span><i class="fa-solid fa-bag-shopping"></i></span> add to
-                            bag</button> -->
+                        
                         <button class="wishlist-btn"><span><i class="fa-regular fa-heart"></i></span>wishlist</button>
                     </div>
                     <hr>
@@ -402,9 +404,9 @@
                             </div>
                             <div class="c-img">
                                 <div class="product">
-                                <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/5/17/1e200bed-92a8-4da2-b23c-6633ee9ba71e1621241304282-3D808F50-F592-4B2C-8F22-F9D1B1B8F36B.jpeg"
-                                    alt="">
-                            </div>
+                                    <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/5/17/1e200bed-92a8-4da2-b23c-6633ee9ba71e1621241304282-3D808F50-F592-4B2C-8F22-F9D1B1B8F36B.jpeg"
+                                        alt="">
+                                </div>
                             </div>
                             <div class="review-footer">
                                 <div class="buyer-info">
@@ -414,19 +416,20 @@
                                     <p class="p-content"><i class="fa-regular fa-thumbs-up"></i>112</p>
                                     <p class="p-content"><i class="fa-regular fa-thumbs-down"></i>17</p>
                                 </div>
-                                
+
                             </div>
                             <hr>
-                        </div><div class="single-c-review">
+                        </div>
+                        <div class="single-c-review">
                             <div class="review-header">
                                 <p>5 <i class="fa-solid fa-star"></i></p>
                                 <p>amzing product the color is also elegant</p>
                             </div>
                             <div class="c-img">
                                 <div class="product">
-                                <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/5/17/1e200bed-92a8-4da2-b23c-6633ee9ba71e1621241304282-3D808F50-F592-4B2C-8F22-F9D1B1B8F36B.jpeg"
-                                    alt="">
-                            </div>
+                                    <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/5/17/1e200bed-92a8-4da2-b23c-6633ee9ba71e1621241304282-3D808F50-F592-4B2C-8F22-F9D1B1B8F36B.jpeg"
+                                        alt="">
+                                </div>
                             </div>
                             <div class="review-footer">
                                 <div class="buyer-info">
@@ -436,7 +439,7 @@
                                     <p class="p-content"><i class="fa-regular fa-thumbs-up"></i>112</p>
                                     <p class="p-content"><i class="fa-regular fa-thumbs-down"></i>17</p>
                                 </div>
-                                
+
                             </div>
                             <hr>
                         </div>
@@ -451,24 +454,24 @@
 
 
     <script>
-      window.onload = function () {
+        window.onload = function () {
             // alert("working")
-            // var currentUser = JSON.parse(localStorage.getItem("myntraCurrentUser"))
-            // // console.log(currentUser,"currentUser");
-            // if (!!currentUser) {
-            //     // alert(currentUser.namee)
-            //     var logoutDiv = document.getElementById("logout");
+            var currentUser = JSON.parse(localStorage.getItem("myntraCurrentUser"))
+            // console.log(currentUser,"currentUser");
+            if (!!currentUser) {
+                // alert(currentUser.namee)
+                var logoutDiv = document.getElementById("logout");
 
-            //     var divFromHtml = document.getElementById("switch");
-            //     // console.log(divFromHtml,"divFromHtml");
-            //     // var h1 = document.createElement("h1");
-            //     // h1.innerText = "madhuri"
-            //     // divFromHtml.append(h1)
-            //     var button = '<i class="fa-solid fa-arrow-right-from-bracket"></i> <span><button onclick="logout() ">Logout</button></span>'
+                var divFromHtml = document.getElementById("switch");
+                // console.log(divFromHtml,"divFromHtml");
+                // var h1 = document.createElement("h1");
+                // h1.innerText = "madhuri"
+                // divFromHtml.append(h1)
+                var button = '<i class="fa-solid fa-arrow-right-from-bracket"></i> <span><button onclick="logout()"  class="logout-style">Logout</button></span>'
 
-            //     var name = `<span> ${currentUser.namee}</span>`;
-            //     divFromHtml.innerHTML = name;
-            //     logoutDiv.innerHTML = button;
+                var name = `<span> ${currentUser.namee}</span>`;
+                divFromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
 
             }
             // else{
@@ -487,25 +490,47 @@
             var structure = `<img src='${product.proImage}' class="got-image" />`
             var productName = `${product.proName}`
             var productPrice = `₹${product.proPrice}`
-            var addToCart = `<button onclick='addCart()' class="cart-btn">Add to cart</button>`                
+            var addToCart = `
+            <div class="btn-section" id="forAddToCart">
+                            <button onclick='addCart(${JSON.stringify(product)})' class="cart-btn"><span><i class="fa-solid fa-bag-shopping"></i></span> add to
+                            bag</button>
+                        <button class="wishlist-btn"><span><i class="fa-regular fa-heart"></i></span>wishlist</button>
+                    </div>`
 
             console.log(structure, "here");
             divToAppendProduct.innerHTML = structure;
             divToAppendProductName.innerHTML = productName;
             divToAppendProductPrice.innerHTML = productPrice;
             divForAddToCart.innerHTML = addToCart;
-        
 
+        }
         function logout() {
             alert("We will miss you..")
             localStorage.removeItem("myntraCurrentUser");
             window.location.reload();
         }
-        function addCart() {
-            alert("Adding to cart")
+        function addCart(product) {
+            // alert("Adding to cart")
+            var currentUser = JSON.parse(localStorage.getItem("myntraCurrentUser"))
+            // console.log(currentUser.email);
+            var userData = JSON.parse(localStorage.getItem("myntraUsers"))
+            var flafForUser = false;
+            for(var i=0; i<userData.length; i++){
+                if(currentUser.useremail === userData[i].useremail){
+                    // alert("got")
+                    if(userData[i].cartProducts == undefined){
+                        userData[i].cartProducts = [product];
+                    }else{
+                        userData[i].cartProducts.push(product)
+                    }
+                    alert("Product added to cart.")
+                    window.location.href = './cart.html'
+                }
+            }
+            localStorage.setItem("myntraUsers",JSON.stringify(userData))
         }
     </script>
-        </script>
+    </script>
 </body>
 
 </html>
