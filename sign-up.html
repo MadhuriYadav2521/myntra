@@ -12,45 +12,88 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div id="screen">
+    <div id="loginScreen">
+        <div class="nav">
+            <div class="logo" onclick="window.location.href='./index.html'">
+                <img src="/img/myntra.png" alt="logo">
+            </div>
+            <div class="nav-link">
+                <div class="nav-item" onclick="window.location.href='./multi-product.html'">
+                    <h1>Men</h1>
+                </div>
+                <div class="nav-item">
+                    <h1>Women</h1>
+                </div>
+                <div class="nav-item">
+                    <h1>Kids</h1>
+                </div>
+                <div class="nav-item">
+                    <h1>Home & Living</h1>
+                </div>
+                <div class="nav-item">
+                    <h1>Beauty</h1>
+                </div>
+                <div class="nav-item">
+                    <h1>Studio <sup>New</sup></h1>
+                </div>
+            </div>
+            <div class="searchbar">
+                <div class="search-item">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="search" placeholder="Search for products, brands and more">
+                </div>
+            </div>
+            <div class="info">
+
+                <div class="info-item">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>wishlist</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>bag</span>
+                </div>
+                <div class="info-item" id="logout">
+
+                </div>
+            </div>
+        </div>
         <div class="register-container">
             <div class="left-register-content">
-                <div class="login-title"> Sign Up </div>
+                <div class="login-img">
+                    <img src="//assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/1/25/f5e9a029-33c3-4a92-811b-ef7917fe6d441674670210687-offer-banner-300-600x240-code-_-MYNTRA300.jpg"
+                        alt="">
+                </div>
+
 
                 <form action="" onsubmit="register(event)">
-                    <div class="input_wrap">
-                        <input type="text" id="userName" required  autocomplete="off"/>
-                        <label>Enter your name</label>
+                    <div class="login-title"> <a class="login-title" href="./sign-up.html">Sign Up</a>
+                        <span>or</span>
+                        <a class="login-title2" href="./login.html">login</a>
                     </div>
-                    <div class="input_wrap">
-                        <input type="email" id="userEmail" required autocomplete="off" />
-                        <label>Enter your email</label>
-                    </div>
-                    <div class="input_wrap">
-                        <input type="password" id="userPassword" required  autocomplete="off"/>
-                        <label>Enter your password</label>
-                    </div>
-                    <div class="input_wrap">
-                        <input type="password"  id="userConfirmPassword" required  autocomplete="off"/>
-                        <label>Confirm password</label>
-                    </div>
-                    <input type="checkbox" name="" id="checkbox" >
-                    <label for="">Remember Me</label>
 
-                    <p class="form-t-and-c">By continuing, I agree to <span class="t-c-style">Terms of Use</span> & <span class="t-c-style">Privacy Policy</span></p>
-                    <div class="sign-up-btn">
-                    <input type="submit" value="Sign Up">
-                        
-                    </div>
-                
+                    <input type="text" id="userName" required placeholder="enter username" autocomplete="off" /><br>
+                    <input type="email" id="userEmail" required placeholder="enter email" autocomplete="off" /><br>
+                    <input type="password" id="userPassword" required placeholder="enter password"
+                        autocomplete="off" /><br>
+                    <input type="password" id="userConfirmPassword" required placeholder="confirm password"
+                        autocomplete="off" /><br>
+
+                    <p class="form-t-and-c">By continuing, I agree to <span class="t-c-style">Terms of Use</span> &
+                        <span class="t-c-style">Privacy Policy</span></p>
+
+                    <input type="submit" value="Sign Up" class="sign-up-btn">
+
                 </form>
 
             </div>
-            
+
         </div>
     </div>
 
     <script src="./main.js"></script>
 </body>
+
 </html>
