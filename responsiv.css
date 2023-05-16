@@ -1,0 +1,285 @@
+@media screen and (max-width:1237px) {
+    html {
+        font-size: 91%;
+    }
+}
+
+@media screen and (max-width:1101px) {
+    html {
+        font-size: 91%;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width:998px) {
+    html {
+        font-size: 88%;
+    }
+}
+
+@media screen and (max-width:956px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width:924px) {
+    html {
+        font-size: 83%;
+    }
+    
+}
+
+@media screen and (max-width:888px) {
+    html {
+        font-size: 82%;
+    }
+}
+
+@media screen and (max-width:856px) {
+    html {
+        font-size: 82%;
+    }
+}
+@media screen and (max-width: 825px){
+    html{
+        font-size: 82%;
+    } 
+    .logo{
+        width: 10%;
+    }
+    .nav{
+        justify-content: space-between;
+    }
+    .info{
+        width: 35%;
+    }
+    .info-item:nth-child(1){
+        display: contents;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-link{
+        display: none;
+    }
+    .searchbar{
+        display: none;
+    }
+    .info-item i {
+        margin-bottom: 4px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    
+    .info-item span {
+        display: none;
+    
+    }
+    .info-item:nth-child(5){
+        display: none;
+    }
+    .slider{
+        margin-bottom: 0px;
+    }
+    .filters-wrapper{
+        display: none;
+    }
+    .filter-list-wrapper{
+        display: none;
+    }
+    .product-list-wrapper{
+        width: 100%;
+    }
+    .product-container{
+        justify-content: space-between;
+        gap: 0;
+    }
+    .product-item {
+        width: 50%;
+        /* border: 1px solid salmon; */
+        /* margin-bottom: 25px; */
+
+    }
+    .pegination{
+        display: none;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .left{
+        flex-direction: column;
+    }
+    .links{
+        width: 100%;
+
+    }
+    .policy{
+        width: 100%;
+    }
+    
+    .footer-content {
+        width: 100%;
+        display: flex;
+    }
+    .footer-content ul{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        gap: 10px;
+    }
+    .product-section{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    .product-img{
+        width:100%;
+    }
+    .product-description{
+        width: 100%;
+    }
+    .cart-container{
+        width: 90%;
+        flex-direction: column;
+    }
+    .cart-left{
+        width: 100%;
+    }
+    .cart-right{
+        width: 100%;
+    }
+    .product-suggestion-section{
+        width: 90%;
+    }
+    .suggested-products{
+        width: 95%;
+    }
+    .suggested-products .product-item {
+        width: 23.5%;
+        border: 1px solid #eaeaec;
+        margin-bottom: 0px;
+    
+    }
+}
+
+@media screen and (max-width:800px) {
+    html {
+        font-size: 82%;
+    }
+
+}
+
+@media screen and (max-width:793px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width:775px) {
+    html {
+        font-size: 79%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 79%;
+    }
+
+}
+
+@media screen and (max-width:712px) {
+    html {
+        font-size: 79%;
+    }
+}
+@media screen and (max-width:708px) {
+    
+}
+
+@media screen and (max-width:652px) {
+    html {
+        font-size: 76%;
+    }
+}
+
+@media screen and (max-width:645px) {
+    html {
+        font-size: 76%;
+    }
+
+}
+
+@media screen and (max-width:630px) {
+    html {
+        font-size: 75%;
+    }
+
+
+}
+
+@media screen and (max-width:621px) {
+    html {
+        font-size: 75%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width:528px) {
+    html {
+        font-size: 75%;
+    }
+
+}
+@media screen and (max-width: 508px){
+    
+    
+}
+
+@media screen and (max-width:462px) {
+    html {
+        font-size: 75%;
+    }
+
+    
+}
+
+@media screen and (max-width:450px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width:431px) {
+    html {
+        font-size: 75%;
+    }
+
+
+}
+
+@media screen and (max-width:407px) {
+    html {
+        font-size: 72%;
+    }
+
+}
+
+@media screen and (max-width:407px) {
+    html {
+        font-size:71%;
+    }
+
+}
